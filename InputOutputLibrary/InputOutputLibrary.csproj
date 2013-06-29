@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ConsoleInputService.cs" />
     <Compile Include="ConsoleOutputService.cs" />
+    <Compile Include="MsgBoxOutputService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +50,13 @@
       <Project>{e63d9ec0-a39d-4641-9319-39f8f215aec2}</Project>
       <Name>CommonTypesLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\InterfacesLibrary\InterfacesLibrary.csproj">
+      <Project>{864e7ff0-61e3-4c3a-8830-56ebbd712470}</Project>
+      <Name>InterfacesLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

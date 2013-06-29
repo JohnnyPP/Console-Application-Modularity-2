@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modularity
 {
-    public class ConsoleInputService
+    public class ConsoleInputService : InputOutputLibrary.IInputService
     {
         public string ReadCommand()
         {
